@@ -22,6 +22,6 @@ describe('GET /sum', () => {
         return supertest(app)
             .get('/sum')
             .query({ b: 4 })
-            .expect(400, 'Value for a is needed')
-    })
+            .expect(400, 'value for a is needed')
+    });
 });

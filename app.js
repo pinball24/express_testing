@@ -33,7 +33,7 @@ app.get('/sum', (req, res) => {
             .send('Value for a must be numeric')
     }
 
-    if(isNan(numB)) {
+    if(isNaN(numB)) {
         return res
             .status(400)
             .send('Value for b must be numeric')
